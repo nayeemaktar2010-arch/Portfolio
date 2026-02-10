@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barkati | Thumbnail & Video Editor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      height: 100vh;
+      background: linear-gradient(120deg, #111, #1f1f1f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    header h1 span { color: #ff3c3c; }
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    header a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      background: #ff3c3c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    header a:hover { background: #ff1f1f; }section { padding: 70px 8%; }
+section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(255, 60, 60, 0.25);
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.video iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 15px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+.service {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+}
+.service h3 { margin-bottom: 10px; color: #ff3c3c; }
+
+footer {
+  background: #090909;
+  padding: 40px 20px;
+  text-align: center;
+  color: #aaa;
+}
+footer a {
+  color: #ff3c3c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media(max-width:768px){
+  header h1 { font-size: 2.4rem; }
+  .video iframe { height: 280px; }
+}
+
+  </style>
+</head>
+<body>  <!-- HERO -->  <header>
+    <div>
+      <h1>Hi, I'm <span>Barkati</span></h1>
+      <p>Professional YouTube Thumbnail & Video Editor</p>
+      <a href="#work">View My Work</a>
+    </div>
+  </header>  <!-- ABOUT -->  <section>
+    <h2>About Me</h2>
+    <p class="about">
+      I'm Barkati, a creative thumbnail designer and video editor who helps creators get higher CTR, more views, and stronger branding. I focus on eye-catching thumbnails and engaging video edits that actually perform on YouTube & Shorts.
+    </p>
+  </section>  <!-- THUMBNAILS -->  <section id="work">
+    <h2>Thumbnail Designs</h2>
+    <div class="grid">
+      <div class="card"><img src="https://img.youtube.com/vi/fQr_N2geh0Q/maxresdefault.jpg" alt="Thumbnail 1"></div>
+      <div class="card"><img src="https://img.youtube.com/vi/yrLPuuhTXxA/maxresdefault.jpg" alt="Thumbnail 2"></div>
+      <div class="card"><img src="https://img.youtube.com/vi/AX0eHDslSEc/maxresdefault.jpg" alt="Thumbnail 3"></div>
+      <div class="card"><img src="https://img.youtube.com/vi/ZZgtxKdSfZY/maxresdefault.jpg" alt="Thumbnail 4"></div>
+    </div>
+  </section>  <!-- VIDEO EDITING -->  <section>
+    <h2>Video Editing (Shorts)</h2>
+    <div class="grid video">
+      <iframe src="https://www.youtube.com/embed/Y8NajrSW2u8" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/t84Juh2sY0w" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/3pZ6XLG9UKI" allowfullscreen></iframe>
+    </div>
+  </section>  <!-- SERVICES -->  <section>
+    <h2>My Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Thumbnail Design</h3>
+        <p>High CTR thumbnails designed to grab attention and boost clicks.</p>
+      </div>
+      <div class="service">
+        <h3>Video Editing</h3>
+        <p>Clean, engaging edits for YouTube videos & Shorts.</p>
+      </div>
+      <div class="service">
+        <h3>YouTube Branding</h3>
+        <p>Consistent visual style to grow your channel professionally.</p>
+      </div>
+    </div>
+  </section>  <!-- FOOTER -->  <footer>
+    <p>© 2026 Barkati | Thumbnail & Video Editor</p>
+    <p>Contact me on Instagram: <a href="https://instagram.com/reallyquiz" target="_blank">@reallyquiz</a></p>
+  </footer></body>
+</html>
